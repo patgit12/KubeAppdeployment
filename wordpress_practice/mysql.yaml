@@ -15,12 +15,14 @@ spec:
       containers:
       - name: mysqlcont
         image: mysql
-        #ports:
-        #- containerPort: 27017
+        ports:
+        - containerPort: 3306
         env:
-        - name: WORDPRESS_DB_USERNAME
+        - name: MYSQL_DATABASE
+          value: mysqldb
+        - name: MYSQL_USER
           value: worduser
-        - name: WORDPRESS_DB_PASSWORD
+        - name: MYSQL_PASSWORD
           value: wordpass
         - name: MYSQL_RANDOM_ROOT_PASSWORD
           value: '1'

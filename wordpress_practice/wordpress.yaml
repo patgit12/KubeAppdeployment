@@ -25,8 +25,7 @@ spec:
         - name: WORDPRESS_DB_PASSWORD
           value: wordpass
         - name: WORDPRESS_DB_NAME
-          value: mysqlservice
-
+          value: mysqldb
 ---
 apiVersion: v1
 kind: Service
