@@ -33,6 +33,6 @@ spec:
   type: ClusterIP
   selector:
     app: mysql
-  #ports:
-  #- port: 27017
-  #  targetPort: 27017
+  ports:
+  - port: 80
+    targetPort: 3306
