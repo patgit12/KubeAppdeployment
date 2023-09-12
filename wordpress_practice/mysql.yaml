@@ -36,5 +36,5 @@ spec:
   selector:
     app: mysql
   ports:
-  - port: 3306 ### it's important to use this port number otherwise you'll a connection error###
+  - port: 3306 ### it's important to use this port number otherwise you'll have a connection error message ###
     targetPort: 3306
