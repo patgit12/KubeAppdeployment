@@ -24,8 +24,8 @@ spec:
           value: worduser
         - name: MYSQL_PASSWORD
           value: wordpass
-        - name: MYSQL_RANDOM_ROOT_PASSWORD
-          value: '1'
+        - name: MYSQL_ROOT_PASSWORD
+          value: rootpass
 ---
 apiVersion: v1
 kind: Service
@@ -36,5 +36,5 @@ spec:
   selector:
     app: mysql
   ports:
-  - port: 80
+  - port: 3306 ### it's important to use this port number otherwise you'll a connection error###
     targetPort: 3306

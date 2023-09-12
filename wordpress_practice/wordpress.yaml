@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
         env:
         - name: WORDPRESS_DB_HOST
-          value:  mysqlservice
+          value: mysqlservice
         - name: WORDPRESS_DB_USER
           value: worduser
         - name: WORDPRESS_DB_PASSWORD
