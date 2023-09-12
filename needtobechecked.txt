@@ -1,0 +1,5 @@
+tainted node in kubernetes
+pv and pvc
+hpa ( horizontal scaling) and vertical autoscaling
+metric server
+secret
