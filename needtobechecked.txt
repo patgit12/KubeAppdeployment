@@ -3,3 +3,4 @@ pv and pvc
 hpa ( horizontal scaling) and vertical autoscaling
 metric server
 secret
+how to buy a domain and assign it to kubernetes ( check the video on how to assign domain to a elastic loadbalancer)
