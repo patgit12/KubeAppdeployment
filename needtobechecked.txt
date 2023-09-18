@@ -5,3 +5,4 @@ metric server
 secret
 how to buy a domain and assign it to kubernetes ( check the video on how to assign domain to a elastic loadbalancer)
 fix for gpg issue : git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+Learn about pv and pvc in kubernetes
