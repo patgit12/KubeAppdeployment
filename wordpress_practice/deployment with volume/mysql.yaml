@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: mysqldb
+spec:
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      name: myapp
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysqlcont
+        image: mysql
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_DATABASE
+          value: mysqldb
+        - name: MYSQL_USER
+          value: worduser
+        - name: MYSQL_PASSWORD
+          value: wordpass
+        - name: MYSQL_ROOT_PASSWORD
+          value: rootpass
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysqlservice
+spec:
+  type: ClusterIP
+  selector:
+    app: mysql
+  ports:
+  - port: 3306 ### it's important to use this port number otherwise you'll have a connection error message ###
+    targetPort: 3306
