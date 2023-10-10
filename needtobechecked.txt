@@ -13,3 +13,4 @@ Add all the files, individually or in a folder, that you want to remove from the
 Execute git rm --cached put/here/your/file.ext for each file or git rm --cached folder/\* if they are in a folder. (It is /\* because you need to escape the *)
 Commit your changes.
 Push to remote.
+source: https://superuser.com/questions/1397199/how-to-ignore-a-tracked-file-in-git-without-deleting-it
